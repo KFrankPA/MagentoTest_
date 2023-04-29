@@ -35,8 +35,10 @@ public class MagentoStepDef {
         //  homePage.searchBox.sendKeys(productName);
        searchResults.quantity.sendKeys(selectQty);
 
+       searchResults.sizeM.click();
+
        searchResults.greenColor.click();
-       Thread.sleep(5000);
+       Thread.sleep(3000);
 
        searchResults.addToCart.click();
 

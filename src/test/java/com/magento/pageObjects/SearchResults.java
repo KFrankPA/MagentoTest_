@@ -19,6 +19,10 @@ public class SearchResults {
     @FindBy(xpath = "(//li[@class='item product product-item'])[1]")
     public WebElement firstItem;
 
+
+    @FindBy(xpath = "//div[@option-label='M']")
+    public WebElement sizeM;
+
     public SearchResults(){
         PageFactory.initElements(Driver.get(), this);
     }
